@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,60 +14,60 @@
     <nav class="sidebar">
         <img src="img/Design sem nome.png" alt="MySQL" width="300" >
         <a href="index.html">
-            <button>Início</button>
+            <button>Home</button>
         </a>
         <a href="index-DDL.html">
-            <button>Comandos DDL</button>
+            <button>DDL Commands</button>
         </a>
         <a href="index-DML.html">
-            <button>Comandos DML</button>
+            <button>DML Commands</button>
         </a>
         <a href="index-DCL.html">
-            <button>Comandos DCL</button>
+            <button>DCL Commands</button>
         </a>
         <a href="index-function.html">
-            <button>Função Agregada</button>
+            <button>Aggregate Functions</button>
         </a>
         <a href="index-Datatype.html">
-            <button>Tipo de Data</button>
+            <button>Data Types</button>
         </a>
         <a href="index-final.html">
-            <button>Finalização</button>
+            <button>Conclusion</button>
         </a>
         
     </nav>
 
     <main class="content">
         <div class="overlay">
-            <h1>Guia de SQL</h1>
+            <h1>SQL Guide</h1>
             <p>
-                Esta página estrutura os principais comandos SQL para manipulação e definição de dados. Pense no SQL como a linguagem que você usa para conversar com um banco de dados, como se fosse uma grande biblioteca digital.
+                This page outlines the primary SQL commands for data definition and manipulation. Think of SQL as the language you use to communicate with a database, treating it like a vast digital library.
             </p>
             
             <hr style="border-color: rgba(255,255,255,0.2); margin: 30px 0;">
 
-            <h2>DDL: A Linguagem do Arquiteto</h2>
+            <h2>DDL: The Architect's Language</h2>
             <p>
-                A <strong>DDL (Data Definition Language)</strong> é o conjunto de comandos que funciona como o arquiteto da biblioteca. Ele não mexe nos livros (os dados), mas sim nas prateleiras e nos armários (a estrutura) que guardam os livros.
+                The <strong>DDL (Data Definition Language)</strong> is the set of commands that functions as the library's architect. It doesn't modify the books (the data) themselves, but rather the shelves and cabinets (the structure) where the books are stored.
             </p>
 
             <ul>
                 <li>
-                    <strong>CREATE (Construir):</strong> Usado para construir uma nova "prateleira" (tabela) para guardar os seus dados. <br>
-                    Exemplo: <code>CREATE TABLE Livros (...);</code>
+                    <strong>CREATE (To Build):</strong> Used to construct a new "shelf" (table) to store your data. <br>
+                    Example: <code>CREATE TABLE Books (...);</code>
                 </li>
                 <li>
-                    <strong>ALTER (Modificar):</strong> Serve para modificar uma "prateleira" que já existe. Se você precisar de um novo espaço ou uma nova etiqueta (coluna), o ALTER faz esse ajuste. <br>
-                    Exemplo: <code>ALTER TABLE Livros ADD COLUMN Ano INT;</code>
+                    <strong>ALTER (To Modify):</strong> Used to modify a pre-existing "shelf." If you need an additional space or a new label (a column), ALTER is the command to make that adjustment. <br>
+                    Example: <code>ALTER TABLE Books ADD COLUMN PublicationYear INT;</code>
                 </li>
                 <li>
-                    <strong>DROP (Derrubar):</strong> É para quando você não precisa mais de uma prateleira e decide removê-la por completo. <strong>Atenção:</strong> ao fazer isso, você também remove todos os livros que estavam nela! <br>
-                    Exemplo: <code>DROP TABLE Livros;</code>
+                    <strong>DROP (To Demolish):</strong> This is used when you no longer need a shelf and decide to remove it completely. <strong>Warning:</strong> doing so will also permanently delete all the books stored on it! <br>
+                    Example: <code>DROP TABLE Books;</code>
                 </li>
             </ul>
 
             <p>
-                Em resumo, <strong>CREATE</strong> para construir, <strong>ALTER</strong> para modificar e <strong>DROP</strong> para derrubar a estrutura do seu banco de dados.
+                In short, <strong>CREATE</strong> is used to build, <strong>ALTER</strong> to modify, and <strong>DROP</strong> to demolish the structure of your database.
             </p>
             <img src="img/instrucoesddl.png" alt="DDL" width="1000">
         </div>
