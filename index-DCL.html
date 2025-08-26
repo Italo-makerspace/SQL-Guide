@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,54 +14,54 @@
     <nav class="sidebar">
         <img src="img/Design sem nome.png" alt="MySQL" width="300" >
         <a href="index.html">
-            <button>Início</button>
+            <button>Home</button>
         </a>
         <a href="index-DDL.html">
-            <button>Comandos DDL</button>
+            <button>DDL Commands</button>
         </a>
         <a href="index-DML.html">
-            <button>Comandos DML</button>
+            <button>DML Commands</button>
         </a>
         <a href="index-DCL.html">
-            <button>Comandos DCL</button>
+            <button>DCL Commands</button>
         </a>
         <a href="index-function.html">
-            <button>Função Agregada</button>
+            <button>Aggregate Functions</button>
         </a>
         <a href="index-Datatype.html">
-            <button>Tipo de Data</button>
+            <button>Data Types</button>
         </a>
         <a href="index-final.html">
-            <button>Finalização</button>
+            <button>Conclusion</button>
         </a>
     </nav>
 
     <main class="content">
         <div class="overlay">
-            <h1>Guia de SQL</h1>
+            <h1>SQL Guide</h1>
             
-            <h2>DCL: A Linguagem do Gerente de Segurança</h2>
+            <h2>DCL: The Security Manager's Language</h2>
             <p>
-                A linguagem <strong>DCL (Data Control Language)</strong> cuida da segurança e permissões de acesso. Pense nela como o gerente de segurança da biblioteca que decide quem pode fazer o quê. Ela se baseia em três comandos principais.
+                The <strong>DCL (Data Control Language)</strong> manages security and access permissions. Think of it as the library's security manager, who decides who is allowed to do what. It operates using three primary commands.
             </p>
             
             <ul>
                 <li>
-                    <strong>GRANT (Dar Acesso):</strong> Para dar a chave e permitir que um usuário acesse um livro ou prateleira. <br>
-                    Exemplo: <code>GRANT SELECT ON Livros TO bibliotecario;</code>
+                    <strong>GRANT (Granting Access):</strong> To hand over the key, allowing a user to access a book or a shelf. <br>
+                    Example: <code>GRANT SELECT ON Books TO librarian;</code>
                 </li>
                 <li>
-                    <strong>DENY (Proibir):</strong> Para proibir um usuário de realizar uma ação específica, mesmo se ele tiver acesso geral. <br>
-                    Exemplo: <code>DENY DELETE ON Livros TO bibliotecario;</code>
+                    <strong>DENY (Explicitly Forbidding):</strong> To prohibit a user from performing a specific action, even if they have general permissions. <br>
+                    Example: <code>DENY DELETE ON Books TO librarian;</code>
                 </li>
                 <li>
-                    <strong>REVOKE (Tirar o Acesso):</strong> Para pegar a chave de volta e remover uma permissão que foi concedida anteriormente. <br>
-                    Exemplo: <code>REVOKE INSERT ON Livros FROM bibliotecario;</code>
+                    <strong>REVOKE (Revoking Access):</strong> To take the key back, removing a permission that was previously granted. <br>
+                    Example: <code>REVOKE INSERT ON Books FROM librarian;</code>
                 </li>
             </ul>
 
             <p>
-                Em resumo, <strong>GRANT</strong> para dar, <strong>DENY</strong> para proibir e <strong>REVOKE</strong> para tirar. A DCL é essencial para manter a segurança de qualquer sistema.
+                In summary, you <strong>GRANT</strong> to permit, <strong>DENY</strong> to forbid, and <strong>REVOKE</strong> to take away. DCL is essential for maintaining the security of any system.
             </p>
             <img src="img/hq720.jpg" alt="DCL" width="1000">
         </div>
