@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SQL Datatype</title>
+    <title>SQL Data Types</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
@@ -14,68 +14,68 @@
     <nav class="sidebar">
         <img src="img/Design sem nome.png" alt="MySQL" width="300" >
         <a href="index.html">
-            <button>Início</button>
+            <button>Home</button>
         </a>
         <a href="index-DDL.html">
-            <button>Comandos DDL</button>
+            <button>DDL Commands</button>
         </a>
         <a href="index-DML.html">
-            <button>Comandos DML</button>
+            <button>DML Commands</button>
         </a>
         <a href="index-DCL.html">
-            <button>Comandos DCL</button>
+            <button>DCL Commands</button>
         </a>
         <a href="index-function.html">
-            <button>Função Agregada</button>
+            <button>Aggregate Functions</button>
         </a>
         <a href="index-Datatype.html">
-            <button>Tipo de Data</button>
+            <button>Data Types</button>
         </a>
         <a href="index-final.html">
-            <button>Finalização</button>
+            <button>Conclusion</button>
         </a>
         
     </nav>
 
     <main class="content">
         <div class="overlay">
-            <h1>Guia de SQL</h1>
+            <h1>SQL Guide</h1>
             
-            <h2>Tipos de Dados: As Gavetas da Biblioteca</h2>
+            <h2>Data Types: The Library's Drawers</h2>
             <p>
-                Pense nos tipos de dados como diferentes tipos de gavetas para guardar informações. Cada gaveta tem um formato específico para o que vai dentro: uma para números, outra para textos, outra para datas, etc. Escolher a gaveta certa é fundamental para manter tudo organizado.
+                Think of data types as different kinds of drawers for storing information. Each drawer has a specific format for what goes inside: one for numbers, another for text, another for dates, and so on. Choosing the right drawer is fundamental to keeping everything organized.
             </p>
             
-            <h3> Números</h3>
+            <h3>Numbers</h3>
             <ul>
-                <li><code>INT</code>: Para números inteiros. Ex: <code>idade = 25</code></li>
-                <li><code>BIGINT</code>: Para números inteiros muito grandes. Ex: <code>CPF = 12345678901</code></li>
-                <li><code>DECIMAL(10,2)</code>: Para números com vírgula e precisão exata, como dinheiro. Ex: <code>preço = 49.90</code></li>
-                <li><code>FLOAT/DOUBLE</code>: Para números com vírgula e precisão aproximada. Ex: <code>peso = 1.75</code></li>
-                <li><code>BOOLEAN</code>: Para valores de verdadeiro ou falso (geralmente 1 ou 0). Ex: <code>ativo = 1</code></li>
+                <li><code>INT</code>: For integer numbers. Ex: <code>age = 25</code></li>
+                <li><code>BIGINT</code>: For very large integer numbers. Ex: <code>social_security = 12345678901</code></li>
+                <li><code>DECIMAL(10,2)</code>: For numbers with a decimal point and exact precision, like currency. Ex: <code>price = 49.90</code></li>
+                <li><code>FLOAT/DOUBLE</code>: For numbers with a decimal point and approximate precision. Ex: <code>height = 1.75</code></li>
+                <li><code>BOOLEAN</code>: For true or false values (usually 1 or 0). Ex: <code>is_active = 1</code></li>
             </ul>
 
-            <h3> Data e Hora</h3>
+            <h3>Date and Time</h3>
             <ul>
-                <li><code>DATE</code>: Para armazenar apenas a data. Ex: <code>2025-08-19</code></li>
-                <li><code>DATETIME</code>: Para armazenar data e hora juntas. Ex: <code>2025-08-19 15:30:00</code></li>
-                <li><code>TIMESTAMP</code>: Similar ao DATETIME, mas é atualizado automaticamente em algumas operações.</li>
-                <li><code>TIME</code>: Para armazenar apenas a hora. Ex: <code>15:30:00</code></li>
-                <li><code>YEAR</code>: Para armazenar apenas o ano. Ex: <code>2025</code></li>
+                <li><code>DATE</code>: To store only the date. Ex: <code>2025-08-19</code></li>
+                <li><code>DATETIME</code>: To store both date and time together. Ex: <code>2025-08-19 15:30:00</code></li>
+                <li><code>TIMESTAMP</code>: Similar to DATETIME, but it is automatically updated on certain operations.</li>
+                <li><code>TIME</code>: To store only the time. Ex: <code>15:30:00</code></li>
+                <li><code>YEAR</code>: To store only the year. Ex: <code>2025</code></li>
             </ul>
 
-            <h3> Texto</h3>
+            <h3>Text (Strings)</h3>
             <ul>
-                <li><code>CHAR(n)</code>: Para textos de tamanho fixo. Ex: <code>código = 'AB123'</code></li>
-                <li><code>VARCHAR(n)</code>: Para textos de tamanho variável (mais comum). Ex: <code>nome = 'Thierry'</code></li>
-                <li><code>TEXT</code>: Para textos muito grandes, como descrições. Ex: <code>descrição = "Produto..."</code></li>
-                <li><code>ENUM</code>: Para escolher uma única opção de uma lista. Ex: <code>status = 'sim'</code></li>
-                <li><code>SET</code>: Para escolher várias opções de uma lista. Ex: <code>hobbies = 'a,c'</code></li>
+                <li><code>CHAR(n)</code>: For fixed-length text. Ex: <code>product_code = 'AB123'</code></li>
+                <li><code>VARCHAR(n)</code>: For variable-length text (most common). Ex: <code>first_name = 'Thierry'</code></li>
+                <li><code>TEXT</code>: For very large blocks of text, like descriptions. Ex: <code>description = "Product..."</code></li>
+                <li><code>ENUM</code>: To choose a single option from a predefined list. Ex: <code>status = 'yes'</code></li>
+                <li><code>SET</code>: To choose multiple options from a predefined list. Ex: <code>hobbies = 'a,c'</code></li>
             </ul>
 
-            <h3> Arquivos</h3>
+            <h3>Binary Data</h3>
             <ul>
-                <li><code>BLOB</code>: Para armazenar dados binários grandes, como fotos, PDFs ou músicas. Ex: <code>foto_de_perfil</code></li>
+                <li><code>BLOB</code>: To store large binary data, such as photos, PDFs, or music. Ex: <code>profile_picture</code></li>
             </ul>
         </div>
     </main>
